@@ -54,8 +54,8 @@ main {
   color: #007bff;
   text-align: center;
   text-shadow: 4px 4px 8px #888888;
-  opacity: 0; /* Inicialmente invisible */
-  animation: fadeInSlideUp 1.5s ease-out forwards; /* Animación para "Bienvenidos" */
+  opacity: 0; 
+  animation: fadeInSlideUp 1.5s ease-out forwards; 
 }
 
 .hero-section h1 {
@@ -85,8 +85,8 @@ main {
   color: #007bff;
   text-shadow: 4px 4px 8px #888888;
   margin-bottom: 1rem;
-  opacity: 0; /* Inicialmente invisible */
-  animation: fadeInSlideUp 1.5s ease-out forwards 0.3s; /* Animación con retraso */
+  opacity: 0; 
+  animation: fadeInSlideUp 1.5s ease-out forwards 0.3s;
 }
 
 .PP {
@@ -118,9 +118,9 @@ main {
 }
 
 /* Estilos para la Sección "Servicios que Ofrecemos" */
-.services-section h2 { /* Suponiendo que "Servicios que Ofrecemos" es un h2 dentro de .services-section */
-  opacity: 0; /* Inicialmente invisible */
-  animation: fadeInSlideUp 1.5s ease-out forwards 0.6s; /* Animación con retraso */
+.services-section h2 {
+  opacity: 0; 
+  animation: fadeInSlideUp 1.5s ease-out forwards 0.6s; 
 }
 .services-section .service-item img {
   max-height: 300px;
@@ -146,18 +146,19 @@ main {
 }
 
 /* Estilos para la Sección "Nuestro Portafolio de Clientes" */
-.portfolio-section { /*  <-  Asegúrate de que tu sección de portafolio tenga esta clase */ }
-.portfolio-section h2 { /* Suponiendo que "Nuestro Portafolio de Clientes" es un h2 dentro de .portfolio-section */
-  opacity: 0; /* Inicialmente invisible */
-  animation: fadeInSlideUp 1.5s ease-out forwards 0.9s; /* Animación con retraso */
+.portfolio-section {
+}
+.portfolio-section h2 { 
+  opacity: 0; 
+  animation: fadeInSlideUp 1.5s ease-out forwards 0.9s; 
 }
 
 /* Estilos para la Sección "¿Necesitás asistencia? ¡Estamos para ayudarte!" */
 .contact-hero-section h1 {
   color: #007bff;
   margin-bottom: 1.5rem;
-  opacity: 0; /* Inicialmente invisible */
-  animation: fadeInSlideUp 1.5s ease-out forwards 1.2s; /* Animación con retraso */
+  opacity: 0; 
+  animation: fadeInSlideUp 1.5s ease-out forwards 1.2s; 
 }
 .contact-hero-section p {
   color: #6c757d;
@@ -207,6 +208,18 @@ main {
   opacity: 1;
 }
 
+/* Definición de la animación Fade-in y Slide-up */
+@keyframes fadeInSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* Empieza un poco más abajo */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* Media Queries*/
 @media (max-width: 768px) {
   .hero-section h1 {
@@ -220,16 +233,6 @@ main {
     text-align: center;
   }
 }
-/* Definición de la animación Fade-in y Slide-up */
-@keyframes fadeInSlideUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px); /* Empieza un poco más abajo */
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 
-/*# sourceMappingURL=style.css.map */
+
+
