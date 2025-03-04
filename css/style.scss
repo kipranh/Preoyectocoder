@@ -31,9 +31,7 @@ main {
         top: 0;
         width: 100%;
         z-index: 1000;
-        /* Degradado de derecha a izquierda */
         background-image: linear-gradient(to left, #5d5b5f, #ffffff);
-        /* Opcional: Ajustar un poco el padding para que el degradado se vea mejor */
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
     }
