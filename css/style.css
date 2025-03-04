@@ -185,7 +185,7 @@ main {
   text-align: center;
   position: fixed;
   text-justify: auto;
-  color: #f8f9fa; /* Added footer text color */
+  color: #f8f9fa; 
 }
 
 /* Estilos para iconos de redes sociales en el footer */
@@ -212,7 +212,7 @@ main {
 @keyframes fadeInSlideUp {
   from {
     opacity: 0;
-    transform: translateY(20px); /* Empieza un poco más abajo */
+    transform: translateY(20px); 
   }
   to {
     opacity: 1;
