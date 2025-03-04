@@ -66,8 +66,8 @@ main {
     color: variables.$primary-color;
     text-align: center;
     text-shadow: variables.$text-shadow;
-    opacity: 0; /* Inicialmente invisible */
-    animation: fadeInSlideUp 1.5s ease-out forwards; /* Animación para "Bienvenidos" */
+    opacity: 0; 
+    animation: fadeInSlideUp 1.5s ease-out forwards; 
 }
 
 .hero-section {
@@ -102,8 +102,8 @@ main {
     color: variables.$primary-color;
     text-shadow: variables.$text-shadow;
     margin-bottom: variables.$font-size-base;
-    opacity: 0; /* Inicialmente invisible */
-    animation: fadeInSlideUp 1.5s ease-out forwards 0.3s; /* Animación con retraso */
+    opacity: 0; 
+    animation: fadeInSlideUp 1.5s ease-out forwards 0.3s;
 }
 
 .PP {
@@ -139,9 +139,9 @@ main {
 
 /* Estilos para la Sección "Servicios que Ofrecemos" */
 .services-section {
-    h2 { /* Suponiendo que "Servicios que Ofrecemos" es un h2 dentro de .services-section */
-        opacity: 0; /* Inicialmente invisible */
-        animation: fadeInSlideUp 1.5s ease-out forwards 0.6s; /* Animación con retraso */
+    h2 { 
+        opacity: 0;
+        animation: fadeInSlideUp 1.5s ease-out forwards 0.6s; 
     }
 
     .service-item {
@@ -175,10 +175,10 @@ main {
 
 
 /* Estilos para la Sección "Nuestro Portafolio de Clientes" */
-.portfolio-section { /*  <-  Asegúrate de que tu sección de portafolio tenga esta clase */
-    h2 { /* Suponiendo que "Nuestro Portafolio de Clientes" es un h2 dentro de .portfolio-section */
-        opacity: 0; /* Inicialmente invisible */
-        animation: fadeInSlideUp 1.5s ease-out forwards 0.9s; /* Animación con retraso */
+.portfolio-section {
+    h2 { 
+        opacity: 0; 
+        animation: fadeInSlideUp 1.5s ease-out forwards 0.9s; 
     }
 }
 
@@ -188,8 +188,8 @@ main {
     h1 {
         color: variables.$primary-color;
         margin-bottom: 1.5rem;
-        opacity: 0; /* Inicialmente invisible */
-        animation: fadeInSlideUp 1.5s ease-out forwards 1.2s; /* Animación con retraso */
+        opacity: 0;
+        animation: fadeInSlideUp 1.5s ease-out forwards 1.2s; 
     }
 
     p {
@@ -220,7 +220,7 @@ main {
     text-align: center;
     position: fixed;
     text-justify: auto;
-    color: variables.$light-gray; /* Added footer text color */
+    color: variables.$light-gray; 
 }
 
 
@@ -247,6 +247,17 @@ main {
     }
 }
 
+/* Definición de la animación Fade-in y Slide-up */
+@keyframes fadeInSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px); 
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 /* Media Queries*/
 @include mixins.mobile-styles {
@@ -265,17 +276,5 @@ main {
             margin-left: 0;
             text-align: center;
         }
-    }
-}
-
-/* Definición de la animación Fade-in y Slide-up */
-@keyframes fadeInSlideUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px); /* Empieza un poco más abajo */
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
     }
 }
